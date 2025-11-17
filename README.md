@@ -1,16 +1,22 @@
+[![Visit Website](https://img.shields.io/badge/Website-dantonifa.github.io%2Fdf--wdd330-blue)](https://dantonifa.github.io/df-wdd330)
+
 # BYU-Pathway Worldwide Online
 ## WDD 330 - Web Frontend Development II
+
+### 👉 The main page for this project is: [https://dantonifa.github.io/df-wdd330](https://dantonifa.github.io/df-wdd330)
+
+---
 
 ### ⛺ SleepOutside Starter Code
 
  - This repository is the start of the SleepOutside web application project for WDD 330. The repository contains branches which are checkpoints for the team and individual assignments throughout the course.
 
- - https://byui-cse.github.io/df-wdd330-ww-course/team.html
+ - [Course Team Page](https://byui-cse.github.io/df-wdd330-ww-course/team.html)
 
 ### Prerequisites
 
 - You must have Node installed to run the following commands.
-[WDD 330 Setup Environment](https://byui-cse.github.io/df-wdd330-ww-course/intro/) 
+- [WDD 330 Setup Environment](https://byui-cse.github.io/df-wdd330-ww-course/intro/)
 
 ### Common Workflow Commands
 
@@ -19,9 +25,6 @@
 - `npm run start` starts up a local server and updates on any JS or CSS/SCSS 
 - `npm run build` to build final files when you are ready to turn in.
 
-
 ---
+
 _BYU-Pathway Worldwide improves lives through access to spiritually based, online affordable higher education. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities._
-
-
-
