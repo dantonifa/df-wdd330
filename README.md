@@ -5,12 +5,12 @@
 
  - This repository is the start of the SleepOutside web application project for WDD 330. The repository contains branches which are checkpoints for the team and individual assignments throughout the course.
 
- - https://byui-cse.github.io/wdd330-ww-course/week01/team.html
+ - https://byui-cse.github.io/df-wdd330-ww-course/team.html
 
 ### Prerequisites
 
 - You must have Node installed to run the following commands.
-[WDD 330 Setup Environment](https://byui-cse.github.io/wdd330-ww-course/intro/) 
+[WDD 330 Setup Environment](https://byui-cse.github.io/dd-wdd330-ww-course/intro/) 
 
 ### Common Workflow Commands
 
