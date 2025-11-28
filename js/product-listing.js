@@ -1,7 +1,6 @@
 import { loadHeaderFooter, getParam } from "./utils.mjs";
 import ProductData from "./ProductData.mjs";
 import ProductList from "./ProductList.mjs";
-import { loadHeaderFooter, getParam } from "./utils.mjs";
 // Load header and footer
 loadHeaderFooter();
 
@@ -21,15 +20,10 @@ productList.init();
 /*render the items on the product listing page*/
 /*The above code is now located in product-listing.js*/
 /*Add document.addEventListener to wait for the DOM to load before executing the code.*/
-/*Create a function renderProductList(products): This function will be
-responsible for rendering the list of products on the product listing
-page.*/
-/*Specify the DOM element where the products will be displayed. In this case,
-document is product_listing/index.html*/
 document.addEventListener("DOMContentLoaded", async () => {
-  const category = getParam("category") || "all"; 
-  const dataSource = new ProductData(category);
-  const products = await dataSource.getData(category);
+  const category = getParam("category") || "all";
+  const dataSource = new ProductData();
+  const listElement = document.getElementById("productContainer");
   // Select the container element to display products
   // Assuming there is a div with id "productContainer" in product_listing/index.html
   // const productContainer = document.getElementById("productContainer")  
@@ -86,3 +80,4 @@ export default class ProductList {
 }
 /*I want to populate the product_listing/index.html with the items that belong to the category chosen by the user in the index.html main page of src*/
 /*how can I do it in the <ul id="productContainer"></ul> element?*/
+
