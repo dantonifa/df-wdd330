@@ -55,8 +55,8 @@ async function loadTemplate(path) {
 }
 
 export async function loadHeaderFooter() {
-  const headerTemplate = await loadTemplate("/partials/header.html");
-  const footerTemplate = await loadTemplate("/partials/footer.html");
+  const headerTemplate = await loadTemplate("https://github.com/dantonifa/df-wdd330/blob/main/partials/header.html");
+  const footerTemplate = await loadTemplate("https://github.com/dantonifa/df-wdd330/blob/main/partials/footer.html");
   const headerElement = document.querySelector("#main-header");
   const footerElement = document.querySelector("#main-footer");
   renderWithTemplate(headerTemplate, headerElement);
