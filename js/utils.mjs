@@ -31,13 +31,14 @@ export function getParam(param) {
   return params.get(param);
 }
 
-export function renderListWithTemplate(template, parentElement, list, position = "afterbegin", clear = false) {
-  const htmlStrings = list.map(template);
+export function renderListWithTemplate(templateFn, parentElement, list, position = "afterbegin", clear = false) {
+  const htmlStrings = list.map(templateFn);
   // if clear is true we need to clear out the contents of the parent.
   if (clear) {
     parentElement.innerHTML = "";
+  } else {
+    parentElement.insertAdjacentHTML(position, htmlStrings.join(""));
   }
-  parentElement.insertAdjacentHTML(position, htmlStrings.join(""));
 }
 
 export function renderWithTemplate(template, parentElement, data, callback) {
@@ -54,17 +55,11 @@ async function loadTemplate(path) {
 }
 
 export async function loadHeaderFooter() {
-  /*load header and footer partials and render them in the page*/
-  /*give an url format or link format to the header and footer partials*/
- df - wdd330 / partials / header.html
-  df-wdd330/partials/footer.html
-
   const headerTemplate = await loadTemplate("partials/header.html");
   const footerTemplate = await loadTemplate("partials/footer.html");
-
   const headerElement = document.querySelector("#main-header");
   const footerElement = document.querySelector("#main-footer");
-
   renderWithTemplate(headerTemplate, headerElement);
   renderWithTemplate(footerTemplate, footerElement);
 }
+
