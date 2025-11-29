@@ -111,6 +111,11 @@
         margin-right:auto;
         margin-top: 20px;;
     }
+    main h2 {
+        font-size: 40px;
+        font-weight: bold;
+        color:#8a470c;
+    }
     main .divider .hero {
         display:grid;
         grid-row-start: 1;
@@ -374,3 +379,4 @@
     footer {
         font-size: var(--small-font);
     }
+
