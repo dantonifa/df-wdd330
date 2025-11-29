@@ -1,4 +1,4 @@
-import { loadHeaderFooter, getParam } from "./utils.mjs";
+import { loadHeaderFooter, getParam } from "../js/utils.mjs";
 import ProductData from "./ProductData.mjs";
 import ProductList from "./ProductList.mjs";
 
@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const productList = new ProductList(category, dataSource, listElement);
   productList.init();
 });
+
 
 
 
