@@ -17,8 +17,8 @@ listing.init();
 /*The above code is now located in product-listing.js*/
 /*Add document.addEventListener to wait for the DOM to load before executing the code.*/
 document.addEventListener("DOMContentLoaded", async () => {
-  const category = getParam("category") || "all";
-  const dataSource = new ProductData();
+  const category = getParam("category") || "backpacks";
+  const dataSource = new ProductData(category);
   const listElement = document.getElementById("productContainer");
   const productList = new ProductList(category, dataSource, listElement);
   productList.init();
@@ -79,5 +79,6 @@ export default class ProductList {
 }
 /*I want to populate the product_listing/index.html with the items that belong to the category chosen by the user in the index.html main page of src*/
 /*how can I do it in the <ul id="productContainer"></ul> element?*/
+
 
 
