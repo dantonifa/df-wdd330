@@ -1,3 +1,4 @@
+/*ProductData.mjs*/
 export default class ProductData {
   constructor(category) {
     this.category = category;
@@ -14,6 +15,7 @@ export default class ProductData {
     return products.find(item => item.Id === id);
   }
 }
+
 
 
 
