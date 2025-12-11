@@ -1,3 +1,4 @@
+/*utils.mjs*/
 // wrapper for querySelector...returns matching element
 export function qs(selector, parent = document) {
   return parent.querySelector(selector);
@@ -47,13 +48,14 @@ export function renderWithTemplate(template, parentElement, data, callback) {
     callback(data);
   }
 }
-
 async function loadTemplate(path) {
   const res = await fetch(path);
+  if (!res.ok) { // Basic error handling to catch the 404
+      throw new Error(`Could not fetch template from ${path}: ${res.statusText}`);
+  }
   const template = await res.text();
   return template;
 }
-
 export async function loadHeaderFooter() {
   const headerTemplate = await loadTemplate("../partials/header.html");
   const footerTemplate = await loadTemplate("../partials/footer.html");
