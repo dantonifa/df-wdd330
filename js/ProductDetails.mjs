@@ -1,11 +1,11 @@
-import { getLocalStorage, setLocalStorage } from "./utils.mjs";
+import { getLocalStorage, setLocalStorage } from "js/utils.mjs";
 
 export default class ProductDetails {
   constructor(productId, dataSource) {
     this.productId = productId;
     this.product = {};
     this.dataSource = dataSource;
-    this.path = `../json/${this.category}.json`;
+    this.path = `json/${this.category}.json`;
   }
 
   async init() {
@@ -51,4 +51,5 @@ function productDetailsTemplate(product) {
 
   document.querySelector("#add-to-cart").dataset.id = product.Id;
 }
+
 
