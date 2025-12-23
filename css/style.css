@@ -114,18 +114,16 @@
         /*Make the mission section flush with the hero image*/
         grid-row-start: 2;
         grid-row-end: 3;
+        display:flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        height: 120px;
+        height: auto;
         background-color: var(--secondary-color);
         color: white;
+        font-weight:bold;
         font-family: var(--font-body);
-        font-size: 50px;
-        
-    }
-    .divider .mission p{
-        margin-top: 25px;
-        text-align: center;
-        font-weight: bold;
+        font-size: 45px;
     }
     .divider .products{
         grid-row-start: 3;
@@ -193,5 +191,6 @@
         background-color: var(--primary-color);
     }
 }
+
 
 
