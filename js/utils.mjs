@@ -58,10 +58,11 @@ The else should be removed - you should always insert the HTML after clearing (i
 JavaScript
 export function renderListWithTemplate(templateFn, parentElement, list, position = "afterbegin", clear = false) {
   const htmlStrings = list.map(templateFn);
-  // if clear is true we need to clear out the contents of the parent.
+  // if clear is true we need to clear out the contents of the parent.  
   if (clear) {
     parentElement.innerHTML = "";
   }
+  // Always insert the HTML (remove the 'else')
   parentElement.insertAdjacentHTML(position, htmlStrings.join(""));
 }
 export function renderWithTemplate(template, parentElement, data, callback) {
