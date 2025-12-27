@@ -6,8 +6,5 @@ import { loadHeaderFooter } from "js/utils.mjs";
 async function loadHeaderFooterAsync() {
  const header=document.querySelector("#main-header");
  const footer=document.querySelector("#main-footer");
- if(header && footer){
-  await loadHeaderFooter();
-}
 }   
 loadHeaderFooterAsync();
