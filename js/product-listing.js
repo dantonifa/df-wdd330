@@ -1,6 +1,6 @@
 /*product-listing.js*/
 // Import necessary modules using correct relative paths
-import { loadHeaderFooter, getParam } from "../js/utils.mjs";
+import { loadHeaderFooter, getParam } from "js/utils.mjs";
 import ProductData from "js/ProductData.mjs";
 import ProductList from "js/ProductList.mjs";
 /*get the header and footer*/
@@ -32,6 +32,7 @@ if (listElement) {
       await productList.init();
   } else {
       console.error("The 'productContainer' element was not found in the HTML.");
+
 
 
 
